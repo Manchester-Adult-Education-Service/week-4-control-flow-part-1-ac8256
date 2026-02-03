@@ -30,7 +30,12 @@ print("-------------------------------------------\n"
 #    (wallet is strictly greater than price), and False otherwise. Print this variable.
 
 # Write your code below:
+wallet_balance=int(input("What's the wallet balance?"))
+item_price=int(input("What's the item_price?"))
 
+print(f"I can afford this: {wallet_balance >= item_price}")
+change_available = wallet_balance > item_price
+print(f"I have change: {change_available}")
 
 # -------------------------------------------
 # Task 2: Security Check (Strings & Inequality)
@@ -46,6 +51,12 @@ print("\n-------------------------------------------\n"
 # 4. Print a Boolean check using '!=' (not equal) to confirm they are indeed different strings.
 
 # Write your code below:
+user = "admin"
+input_name = "Admin"
+print(f"Are user and input_name the same?: {user == input_name}")
+print(f"Are user and input_name different?: {user != input_name}")
+
+
 
 
 # -------------------------------------------
@@ -63,6 +74,12 @@ print("\n-------------------------------------------\n"
 # 3. Print: "Access granted: [True/False]" using your variable.
 
 # Write your code below:
+age=int(input("What's your age?"))
+if age >= 18:
+    can_enter = True
+else:
+    can_enter = False
+print(f"Access granted: {can_enter}")
 
 
 # -------------------------------------------
