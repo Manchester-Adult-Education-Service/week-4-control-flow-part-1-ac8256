@@ -31,6 +31,12 @@ print("-------------------------------------------\n"
 
 # Write your code below:
 
+wallet_balance=int(input("What's the wallet balance?"))
+item_price=int(input("What's the item_price?"))
+
+print(f"I can afford this: {wallet_balance >= item_price}")
+change_available = wallet_balance > item_price
+print(f"I have change: {change_available}")
 
 # -------------------------------------------
 # Task 2: Security Check (Strings & Inequality)
@@ -46,6 +52,13 @@ print("\n-------------------------------------------\n"
 # 4. Print a Boolean check using '!=' (not equal) to confirm they are indeed different strings.
 
 # Write your code below:
+
+user = "admin"
+input_name = "Admin"
+print(f"Are user and input_name the same?: {user == input_name}")
+print(f"Are user and input_name different?: {user != input_name}")
+
+
 
 
 # -------------------------------------------
@@ -64,6 +77,14 @@ print("\n-------------------------------------------\n"
 
 # Write your code below:
 
+age=int(input("What's your age?"))
+can_enter = age >= 18
+print(f"Access granted: {can_enter}")
+
+# if age >= 18:
+#     print(f"Access granted!")
+# else:
+#     print(f"Access denied!")
 
 # -------------------------------------------
 # SAVING YOUR WORK
@@ -98,6 +119,14 @@ print("\n-------------------------------------------\n"
 
 # Write your code below:
 
+number_ext_1=int(input("Input a number between 1 and 10. "))
+print(f"The number is valid: {number_ext_1 > 0 and number_ext_1 <= 10} ")
+
+# if (number_ext_1 > 0 and number_ext_1 <= 10):
+#     print(f"The number is valid.")
+# else:
+#     print(f"The number is invalid.")
+
 
 # Extension 2: The "Either/Or" (The 'or' Operator)
 # -------------------------------------------
@@ -116,6 +145,15 @@ print("\n-------------------------------------------\n"
 
 # Write your code below:
 
+colour=input("What's your favourite colour?"). lower()
+print(f"Your favourite colour is either red or blue: {colour == "red" or colour == "blue"}")
+
+# if colour == "red" or colour == "blue":
+#     print(f"Your favourite colour is either red or blue!")
+# else:
+#     print(f"Your favourite colour is neither red or blue!")
+
+
 
 # Extension 3: Even Number Detector (Modulus %)
 # -------------------------------------------
@@ -132,6 +170,8 @@ print("\n-------------------------------------------\n"
 
 # Write your code below:
 
+number_ext_3 = int(input("Input a number. "))
+print(f"The number is an even number: {number_ext_3 % 2 == 0}")
 
 # -------------------------------------------
 # SAVING YOUR WORK
@@ -175,6 +215,10 @@ print("\n-------------------------------------------\n"
 # - Use parenthesis ( ) to group the "OR" part together.
 
 # Write your code below:
+
+year = int(input("Enter a year. "))
+is_leap_year = year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)
+print(f"Is leap year: {is_leap_year}")
 
 
 # -------------------------------------------
